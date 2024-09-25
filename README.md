@@ -1,16 +1,16 @@
 # tugas3praktikum2024
 
-A new Flutter project.
+Nama : Tahta Setyo Nugroho
+NIM : H1D022066
+Shift Baru : E
 
-## Getting Started
+Tugas 3 Praktikum 2024
 
-This project is a starting point for a Flutter application.
+1. Proses Login
+Pengguna memasukkan username dan password pada halaman login. Setelah menekan tombol Login, username disimpan menggunakan SharedPreferences. Navigasi ke HomePage dilakukan dengan menggunakan Navigator.pushReplacement() setelah proses login berhasil.
 
-A few resources to get you started if this is your first Flutter project:
+2. Proses Perpindahan Halaman dengan Sidebar
+SideMenu berfungsi sebagai navigasi. Setiap menu, seperti Dashboard, Settings, atau About, ditampilkan menggunakan ListTile dengan aksi onTap. Ketika salah satu item diklik, halaman baru dibuka dengan menggunakan Navigator.pushReplacement().
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+3. Penggunaan Router (Navigasi)
+Dalam aplikasi ini, Navigator.pushReplacement() digunakan untuk berpindah halaman dan mengganti halaman saat ini dengan halaman baru. Metode ini memastikan bahwa pengguna tidak bisa kembali ke halaman sebelumnya (misalnya, setelah login). Setelah pengguna berhasil login, aplikasi menggunakan Navigator.pushReplacement() untuk menavigasi dari halaman login ke halaman utama (HomePage). Dengan menggunakan pushReplacement(), halaman login akan dikeluarkan dari stack navigasi, yang berarti pengguna tidak dapat kembali ke halaman login menggunakan tombol kembali, karena halaman tersebut sudah digantikan oleh halaman HomePage.
